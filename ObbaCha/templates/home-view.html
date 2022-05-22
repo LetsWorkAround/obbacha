@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    {% comment %} <link rel="stylesheet" href="./style.css"> {% endcomment %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="/languageSelection">
+            <div class="Home_header_selector">
+                <img src="static/img/porsche-icon-29.png" alt="포르쉐아이콘" height="100">
+                <span>포르쉐 추천!</span>
+            </div>
+        </a>
+        <h1 class="Home_main-title">
+            "내가 포르쉐 타면 카푸어인가?"
+            <br>
+            "내가 라면만 먹으면 탈 수 있는 차는?"
+        </h1>
+        <h3 class="Home_sub-title2">하루에 세끼 라면이면 가능?</h3>
+        <a href="/question" style="text-decoration:none">
+            <div class="Home_start-btn">
+                <span class="Home_btn-text">카푸어 테스트 시작하기!</span>
+                {% comment %} <div class="Home_count-num">
+                    "현재 총 "
+                    <span class="Home_number">12323</span>
+                    "명이 카푸어가 되었습니다"
+                </div> {% endcomment %}
+            </div>
+        </a>
+
+        <a href="www.naver.com" target="_blank" rel="noopener noreferrer">
+            <img src="static/img/porscheLogo.png" alt="porche" class="Home_logo-img">
+        </a>
+
+        <div class="Home_business">
+            <div class="Home_title">협찬 문의</div>
+            <div class="Home_email">portajong@obbacha.kr</div>
+        </div>
+    </div>
+</body>
+
+</html>
