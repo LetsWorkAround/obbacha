@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    {% comment %} <link rel="stylesheet" href="./style.css"> {% endcomment %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div id="root">
+        <div id="wrapper">
+            <div class="Question_contents">
+                <div class="Question_gauge">
+                    <div id="gaugeLine" class="Question_line"></div>
+                    <div id="gaugeCircle" class="Question_circle-img" style="left: 0px;">
+                        <span class="Question_number">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slider slick-initialized" dir="ltr">
+                <div class="slick=list">
+                    <div class="slick-track" style="width 3792px; opacity: 1; transform: translated3d(0px, 0px, 0px);"
+                        <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 316px;">
+                            <div>
+                                <div class="Question_q-text">친구와의 약속이 취소됐을 때 나는</div>
+                                <ul class="Question_answers">
+                                    <li class="Question_answer-item Home_start-btn">
+                                        "뭐야..-_-"
+                                    <br>
+                                    "다른 친구에게 연락해서 나오라고 한다."
+                                    </li>
+                                    <li class="Question_answer-item Home_start-btn">
+                                        "올 ㅋㅋ 개이득"
+                                    <br>
+                                    "혼자 집에서 뒹굴뒹굴 거린다"
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
